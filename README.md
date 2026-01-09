@@ -5,9 +5,9 @@ A approach to start a new Android app with architecture
 
 ## Quick Guide
 
-Hello, my name is Bruno. This repository contains the Android Kotlin Starter, a project created to serve as a solid and realistic starting point for Android applications.
+Hello, my name is Bruno. This repository contains the Android Kotlin Starter**, a project created to serve as a solid and realistic starting point for Android applications.
 
-After researching and testing different architectural approaches over the years, I put this template together to better reflect how I like to structure real projects. The focus here is not novelty, but clarity, separation of concerns, and long-term maintainability**.
+After researching and testing different architectural approaches over the years, I put this template together to better reflect how I like to structure real projects. The focus here is not novelty, but **clarity, separation of concerns, and long-term maintainability**.
 
 This starter is intended to be useful both for learning and for real production work. It is the kind of base project I would want to reuse and evolve over time.
 
@@ -27,7 +27,7 @@ This starter is intended to be useful both for learning and for real production 
 
 ## Project Folder Structure
 
-
+```text
 app/            UI layer, DI, and navigation
  ├─ di/          Dependency Injection (Hilt modules)
  ├─ navigation/  Navigation graph and routes
@@ -48,7 +48,7 @@ domain/         Business rules (pure Kotlin)
  ├─ model/       Domain models
  ├─ repository/  Repository contracts
  └─ usecase/     Application use cases
-
+```
 
 ---
 
@@ -70,7 +70,7 @@ domain/         Business rules (pure Kotlin)
 
 Suggested structure for a new feature:
 
-
+```text
 ui/featureName/
  ├─ FeatureFragment.kt
  ├─ FeatureViewModel.kt
@@ -85,7 +85,7 @@ data/
  ├─ repository/
  ├─ remote/
  └─ local/
-
+```
 
 The intention is to keep UI, business logic, and data access clearly separated, making the codebase easier to test and evolve.
 
